@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+    <h1 class="text-2xl font-bold mb-4">To-Do List</h1>
+    <div class="mb-4">
+      <input type="text" id="task-title" placeholder="Task Title" class="border p-2 rounded w-full mb-2">
+      <input id="task-desc" placeholder="Task Description" class="border p-2 rounded w-full mb-2">
+      <button onclick="addTask()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add</button>
+    </div>
+    <div>
+      <h2 class="text-xl font-bold mb-2">Uncompleted Tasks</h2>
+      <ul id="uncompleted-tasks" class="list-disc pl-6"></ul>
+    </div>
+    <div class="mt-4">
+      <h2 class="text-xl font-bold mb-2">Completed Tasks</h2>
+      <ul id="completed-tasks" class="list-disc pl-6"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
